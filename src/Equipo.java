@@ -12,6 +12,12 @@ public class Equipo {
     public Equipo() {
     }
 
+    public Equipo(String nombre, String pais, ArrayList<Jugador> j) {
+        this.nombre = nombre;
+        this.pais = pais;
+        this.j = j;
+    }
+
     public Equipo(String nombre, String pais, int rating, ArrayList<Jugador> j) {
         this.nombre = nombre;
         this.pais = pais;
