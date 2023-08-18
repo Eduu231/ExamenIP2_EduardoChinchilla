@@ -41,7 +41,7 @@ public class Defensa extends Jugador{
 
     @Override
     public String toString() {
-        return "Defensa{" + "fisico=" + fisico + ", ritmo=" + ritmo + ", entrada=" + entrada + '}';
+        return "Defensa" + "\n"+"fisico: " + fisico + "\n"+"ritmo: " + ritmo + "\n"+"entrada: " + entrada +"\n";
     }
 
     @Override

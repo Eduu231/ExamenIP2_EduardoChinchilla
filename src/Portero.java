@@ -8,6 +8,9 @@ public class Portero extends Jugador{
     private int lanzamiento;
     private int passing;
 
+    public Portero() {
+    }
+
     public Portero(int agarre, int lanzamiento, int passing) {
         this.agarre = agarre;
         this.lanzamiento = lanzamiento;
@@ -65,7 +68,7 @@ public class Portero extends Jugador{
 
     @Override
     public String toString() {
-        return "Portero{" + "agarre=" + agarre + ", lanzamiento=" + lanzamiento + ", passing=" + passing + '}';
+        return "Portero" + "\n"+"agarre: " + agarre + "\n"+"lanzamiento: " + lanzamiento + "\n"+"passing: " + passing +"\n";
     }
 
     

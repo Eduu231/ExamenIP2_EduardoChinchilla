@@ -40,7 +40,7 @@ public class Mediocampista extends Jugador{
 
     @Override
     public String toString() {
-        return "Mediocampista{" + "vision=" + vision + ", passing=" + passing + ", regate=" + regate + '}';
+        return "Mediocampista" + "\n"+"vision: " + vision + "\n"+"passing: " + passing + "\n"+"regate: " + regate + "\n";
     }
 
     @Override

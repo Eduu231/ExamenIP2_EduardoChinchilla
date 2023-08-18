@@ -176,7 +176,7 @@ public abstract class Jugador {
     public abstract int rating();
     @Override
     public String toString() {
-        return "Jugador{" + "nombre=" + nombre + ", edad=" + edad + ", nacionalidad=" + nacionalidad + ", pieHabil=" + pieHabil + ", rating=" + rating + ", equipo=" + equipo + ", agarre=" + agarre + ", lanzamiento=" + lanzamiento + ", fisico=" + fisico + ", ritmo=" + ritmo + ", entrada=" + entrada + ", vision=" + vision + ", passing=" + passing + ", regate=" + regate + ", disparo=" + disparo + '}';
+        return "Jugador"+ "\n"+ "nombre:" + nombre + "\n"+"edad: " + edad + "\n"+"nacionalidad: " + nacionalidad + "\n"+"pieHabil: " + pieHabil + "\n"+"rating: " + rating + "\n"+"equipo: " + equipo + "\n"+"agarre: " + agarre + "\n"+"lanzamiento: " + lanzamiento + "\n"+"fisico: " + fisico + "\n"+"ritmo: " + ritmo + "\n"+"entrada: " + entrada + "\n"+"vision: " + vision + "\n"+"passing: " + passing + "\n"+"regate: " + regate + "\n"+"disparo: " + disparo +"\n";
     }
     
     

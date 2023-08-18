@@ -36,7 +36,7 @@ public class Delantero extends Jugador{
 
     @Override
     public String toString() {
-        return "Delantero{" + "ritmo=" + ritmo + ", disparo=" + disparo + ", regate=" + regate + '}';
+        return "Delantero" + "\n"+"ritmo: " + ritmo + "\n"+"disparo: " + disparo + "\n"+"regate: " + regate + "\n";
     }
 
     @Override
