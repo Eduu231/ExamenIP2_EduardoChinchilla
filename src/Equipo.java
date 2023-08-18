@@ -61,6 +61,9 @@ public class Equipo {
     public String toString() {
         return "Equipo" + "\n"+"nombre: " + nombre + "\n"+"pais: " + pais + "\n"+"rating: " + rating + "\n"+"jugadores: " + j + "\n";
     }
-    
+    private int ratingEquipo(){
+        
+        return 0;
+    }
     
 }
