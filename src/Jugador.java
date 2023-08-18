@@ -107,7 +107,12 @@ public abstract class Jugador {
     }
 
     public void setAgarre(int agarre) {
-        this.agarre = agarre;
+        int r = 1 + rand.nextInt(5);
+        int num = r * 13;
+        if (num >= 70 && num <= 100){
+             this.agarre = num;
+        }
+       
     }
 
     public int getLanzamiento() {
@@ -115,6 +120,12 @@ public abstract class Jugador {
     }
 
     public void setLanzamiento(int lanzamiento) {
+        int r = 1 + rand.nextInt(5);
+        int num = r * 13;
+        if (num >= 70 && num <= 100){
+             this.lanzamiento = num;
+        }
+       
         this.lanzamiento = lanzamiento;
     }
 
@@ -123,7 +134,12 @@ public abstract class Jugador {
     }
 
     public void setFisico(int fisico) {
-        this.fisico = fisico;
+        int r = 1 + rand.nextInt(5);
+        int num = r * 13;
+        if (num >= 70 && num <= 100){
+             this.fisico = num;
+        }
+      
     }
 
     public int getRitmo() {
@@ -131,7 +147,12 @@ public abstract class Jugador {
     }
 
     public void setRitmo(int ritmo) {
-        this.ritmo = ritmo;
+        int r = 1 + rand.nextInt(5);
+        int num = r * 13;
+        if (num >= 70 && num <= 100){
+             this.ritmo = num;
+        }
+        
     }
 
     public int getEntrada() {
@@ -139,7 +160,12 @@ public abstract class Jugador {
     }
 
     public void setEntrada(int entrada) {
-        this.entrada = entrada;
+        int r = 1 + rand.nextInt(5);
+        int num = r * 13;
+        if (num >= 70 && num <= 100){
+             this.entrada = num;
+        }
+        
     }
 
     public int getVision() {
@@ -147,7 +173,12 @@ public abstract class Jugador {
     }
 
     public void setVision(int vision) {
-        this.vision = vision;
+        int r = 1 + rand.nextInt(5);
+        int num = r * 13;
+        if (num >= 70 && num <= 100){
+             this.vision = num;
+        }
+        
     }
 
     public int getPassing() {
@@ -155,7 +186,12 @@ public abstract class Jugador {
     }
 
     public void setPassing(int passing) {
-        this.passing = passing;
+        int r = 1 + rand.nextInt(5);
+        int num = r * 13;
+        if (num >= 70 && num <= 100){
+             this.passing = num;
+        }
+        
     }
 
     public int getRegate() {
@@ -163,7 +199,12 @@ public abstract class Jugador {
     }
 
     public void setRegate(int regate) {
-        this.regate = regate;
+        int r = 1 + rand.nextInt(5);
+        int num = r * 13;
+        if (num >= 70 && num <= 100){
+             this.regate = num;
+        }
+      
     }
 
     public int getDisparo() {
@@ -171,7 +212,12 @@ public abstract class Jugador {
     }
 
     public void setDisparo(int disparo) {
-        this.disparo = disparo;
+        int r = 1 + rand.nextInt(5);
+        int num = r * 13;
+        if (num >= 70 && num <= 100){
+             this.disparo = num;
+        }
+        
     }
     public abstract int rating();
     @Override

@@ -74,7 +74,8 @@ public class Portero extends Jugador{
     
     @Override
     public int rating() {
-        int total = this.agarre + this.lanzamiento + this.passing;
+        int total =0;
+        total += this.agarre + this.lanzamiento + this.passing;
         int promedio = total/3;
         
         return promedio;

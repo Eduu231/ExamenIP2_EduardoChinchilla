@@ -13,29 +13,44 @@ public class Mediocampista extends Jugador{
     public Mediocampista(String nombre, int edad, String nacionalidad, String pieHabil, int rating, String equipo) {
         super(nombre, edad, nacionalidad, pieHabil, rating, equipo);
     }
-
+    
     public int getVision() {
         return vision;
     }
-
+    @Override
     public void setVision(int vision) {
-        this.vision = vision;
+        int r = 1 + rand.nextInt(12);
+        int num = r * 12;
+        if (num >= 70 && num <= 100){
+            super.setVision(num);
+        }
+       
     }
 
     public int getPassing() {
         return passing;
     }
-
+    @Override
     public void setPassing(int passing) {
-        this.passing = passing;
+        int r = 1 + rand.nextInt(12);
+        int num = r * 12;
+        if (num >= 70 && num <= 100){
+            super.setPassing(num);
+        }
+        
     }
 
     public int getRegate() {
         return regate;
     }
-
+    @Override
     public void setRegate(int regate) {
-        this.regate = regate;
+        int r = 1 + rand.nextInt(12);
+        int num = r * 12;
+        if (num >= 70 && num <= 100){
+            super.setRegate(num);
+        }
+       
     }
 
     @Override
@@ -45,7 +60,11 @@ public class Mediocampista extends Jugador{
 
     @Override
     public int rating() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        int total =0;
+        total += this.passing + this.regate + this.vision;
+        int promedio = total/3;
+        
+        return promedio;
     }
     
     

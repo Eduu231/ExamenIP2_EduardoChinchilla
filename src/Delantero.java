@@ -13,25 +13,39 @@ public class Delantero extends Jugador{
     public int getRitmo() {
         return ritmo;
     }
-
+    @Override
     public void setRitmo(int ritmo) {
-        this.ritmo = ritmo;
+        int r = 1 + rand.nextInt(12);
+        int num = r * 12;
+        if (num >= 70 && num <= 100){
+            super.setRitmo(num);
+        }
+        
     }
 
     public int getDisparo() {
         return disparo;
     }
-
+    @Override
     public void setDisparo(int disparo) {
-        this.disparo = disparo;
+        int r = 1 + rand.nextInt(12);
+        int num = r * 12;
+        if (num >= 70 && num <= 100){
+            super.setDisparo(num);
+        }
+        
     }
 
     public int getRegate() {
         return regate;
     }
-
+    @Override
     public void setRegate(int regate) {
-        this.regate = regate;
+        int r = 1 + rand.nextInt(12);
+        int num = r * 12;
+        if (num >= 70 && num <= 100){
+            super.setRegate(num);
+        }
     }
 
     @Override
@@ -39,9 +53,13 @@ public class Delantero extends Jugador{
         return "Delantero" + "\n"+"ritmo: " + ritmo + "\n"+"disparo: " + disparo + "\n"+"regate: " + regate + "\n";
     }
 
-    @Override
+   @Override
     public int rating() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        int total =0;
+        total += this.disparo + this.regate+ this.ritmo;
+        int promedio = total/3;
+        
+        return promedio;
     }
     
     

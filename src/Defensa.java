@@ -18,25 +18,40 @@ public class Defensa extends Jugador{
     public int getFisico() {
         return fisico;
     }
-
+    @Override
     public void setFisico(int fisico) {
-        this.fisico = fisico;
+        int r = 1 + rand.nextInt(12);
+        int num = r * 12;
+        if (num >= 70 && num <= 100){
+            super.setFisico(num);
+        }
+        
     }
 
     public int getRitmo() {
         return ritmo;
     }
-
+    @Override
     public void setRitmo(int ritmo) {
-        this.ritmo = ritmo;
+        int r = 1 + rand.nextInt(12);
+        int num = r * 12;
+        if (num >= 70 && num <= 100){
+            super.setRitmo(num);
+        }
+        
     }
 
     public int getEntrada() {
         return entrada;
     }
-
+    @Override
     public void setEntrada(int entrada) {
-        this.entrada = entrada;
+        int r = 1 + rand.nextInt(12);
+        int num = r * 12;
+        if (num >= 70 && num <= 100){
+            super.setEntrada(num);
+        }
+       
     }
 
     @Override
@@ -46,7 +61,11 @@ public class Defensa extends Jugador{
 
     @Override
     public int rating() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        int total =0;
+        total += this.entrada + this.ritmo + this.fisico;
+        int promedio = total/3;
+        
+        return promedio;
     }
     
     
