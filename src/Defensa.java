@@ -15,6 +15,7 @@ public class Defensa extends Jugador{
         super(agarre, lanzamiento, fisico, ritmo, entrada, vision, passing, regate, disparo);
     }
 
+    @Override
     public int getFisico() {
         return fisico;
     }
@@ -28,6 +29,7 @@ public class Defensa extends Jugador{
         
     }
 
+    @Override
     public int getRitmo() {
         return ritmo;
     }
@@ -41,6 +43,7 @@ public class Defensa extends Jugador{
         
     }
 
+    @Override
     public int getEntrada() {
         return entrada;
     }

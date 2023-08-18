@@ -88,7 +88,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 957, Short.MAX_VALUE)
+            .addGap(0, 1007, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -101,7 +101,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 957, Short.MAX_VALUE)
+            .addGap(0, 1007, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -147,7 +147,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(197, 197, 197)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 487, Short.MAX_VALUE))
+                .addGap(0, 537, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -165,7 +165,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 957, Short.MAX_VALUE)
+            .addGap(0, 1007, Short.MAX_VALUE)
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -233,14 +233,14 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel2))
+                        .addGap(56, 56, 56)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addGap(56, 56, 56)
-                                .addComponent(nombretxt))
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(83, 83, 83)
-                                .addComponent(edadtxt))))
+                                .addComponent(edadtxt)
+                                .addGap(9, 9, 9))
+                            .addComponent(nombretxt)))
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel3)
@@ -256,24 +256,24 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                             .addComponent(nacionalidadtxt))))
                 .addGap(61, 61, 61))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addContainerGap(352, Short.MAX_VALUE)
+                .addContainerGap(402, Short.MAX_VALUE)
                 .addComponent(AgregarJugador, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(336, 336, 336))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(48, 48, 48)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(nombretxt, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(edadtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
+                .addGap(27, 27, 27)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(48, 48, 48)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel1)
-                            .addComponent(nombretxt, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2)
-                            .addComponent(edadtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(52, 52, 52)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel3)
                             .addComponent(nacionalidadtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -283,9 +283,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                             .addComponent(piehabiltxt, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(74, 74, 74)
                         .addComponent(jLabel6))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(92, 92, 92)
                 .addComponent(AgregarJugador, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(134, 134, 134))
@@ -357,7 +355,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(333, 333, 333)
                 .addComponent(agregarEquipo, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(407, Short.MAX_VALUE))
+                .addContainerGap(457, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -416,7 +414,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addGap(268, 268, 268)
                         .addComponent(listarEquipos, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(81, Short.MAX_VALUE))
+                .addContainerGap(131, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -514,7 +512,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(277, 277, 277)
                         .addComponent(agregarEstadio, javax.swing.GroupLayout.PREFERRED_SIZE, 312, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(135, Short.MAX_VALUE))
+                .addContainerGap(185, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -571,23 +569,20 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jPanel9Layout.setHorizontalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addGap(86, 86, 86)
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 663, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addGap(251, 251, 251)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 297, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(208, Short.MAX_VALUE))
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 663, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 344, Short.MAX_VALUE))
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addGap(129, 129, 129)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 297, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGap(24, 24, 24)
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(63, 63, 63)
+                .addGap(45, 45, 45)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(86, Short.MAX_VALUE))
+                .addContainerGap(128, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Listar Estadio", jPanel9);
@@ -596,10 +591,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTabbedPane1)
-                .addContainerGap())
+            .addComponent(jTabbedPane1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -609,79 +601,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void nacionalidadtxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nacionalidadtxtActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_nacionalidadtxtActionPerformed
-
-    private void AgregarJugadorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AgregarJugadorMouseClicked
-        // TODO add your handling code here:
-        
-        j.add(new Jugador(nombretxt.getText(),Integer.parseInt(edadtxt.getText()), nacionalidadtxt.getText(), piehabiltxt.getText()){
-           
-            @Override
-            public int rating() {
-                throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-            }
-           
-        });
-         JOptionPane.showMessageDialog(this, "Se agrego exitosamente");
-        nombretxt.setText("");
-        nacionalidadtxt.setText("");
-        edadtxt.setText("");
-        piehabiltxt.setText("");
-        
-    }//GEN-LAST:event_AgregarJugadorMouseClicked
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        // TODO add your handling code here:
-        
-        listarTabla();
-                                          
-    }//GEN-LAST:event_jButton1MouseClicked
-
-    private void AgregarJugadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgregarJugadorActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_AgregarJugadorActionPerformed
-
-    private void nombreEtxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombreEtxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_nombreEtxtActionPerformed
-
-    private void paistxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paistxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_paistxtActionPerformed
-
-    private void agregarEquipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarEquipoActionPerformed
-        // TODO add your handling code here:
-        
-        e.add(new Equipo(nombreEtxt.getText(), paistxt.getText(), j));
-        nombreEtxt.setText("");
-        paistxt.setText("");
-        
-        JOptionPane.showMessageDialog(this, "Se agrego exitosamente");
-        
-    }//GEN-LAST:event_agregarEquipoActionPerformed
-
-    private void listarEquiposActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listarEquiposActionPerformed
-        listarEquipo();
-        
-    }//GEN-LAST:event_listarEquiposActionPerformed
-
-    private void nombreEstadiotxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombreEstadiotxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_nombreEstadiotxtActionPerformed
-
-    private void ciudadtxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ciudadtxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ciudadtxtActionPerformed
-
-    private void cantidadtxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cantidadtxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cantidadtxtActionPerformed
+        listarEstadio();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void agregarEstadioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarEstadioActionPerformed
         // TODO add your handling code here:
@@ -689,21 +612,90 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
     private void agregarEstadioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarEstadioMouseClicked
         // TODO add your handling code here:
-        
+
         estadio.add(new Estadio(nombreEstadiotxt.getText(), ciudadtxt.getText(), Integer.parseInt(cantidadtxt.getText()), e));
         nombreEstadiotxt.setText("");
         ciudadtxt.setText("");
         cantidadtxt.setText("");
-                                
-        
+
         JOptionPane.showMessageDialog(this, "Se agrego el estadio");
-        
+
     }//GEN-LAST:event_agregarEstadioMouseClicked
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void cantidadtxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cantidadtxtActionPerformed
         // TODO add your handling code here:
-        listarEstadio();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_cantidadtxtActionPerformed
+
+    private void ciudadtxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ciudadtxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ciudadtxtActionPerformed
+
+    private void nombreEstadiotxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombreEstadiotxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nombreEstadiotxtActionPerformed
+
+    private void listarEquiposActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listarEquiposActionPerformed
+        listarEquipo();
+
+    }//GEN-LAST:event_listarEquiposActionPerformed
+
+    private void agregarEquipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarEquipoActionPerformed
+        // TODO add your handling code here:
+
+        e.add(new Equipo(nombreEtxt.getText(), paistxt.getText(), j));
+        nombreEtxt.setText("");
+        paistxt.setText("");
+
+        JOptionPane.showMessageDialog(this, "Se agrego exitosamente");
+
+    }//GEN-LAST:event_agregarEquipoActionPerformed
+
+    private void paistxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paistxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_paistxtActionPerformed
+
+    private void nombreEtxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombreEtxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nombreEtxtActionPerformed
+
+    private void AgregarJugadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgregarJugadorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_AgregarJugadorActionPerformed
+
+    private void AgregarJugadorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AgregarJugadorMouseClicked
+        // TODO add your handling code here:
+
+        j.add(new Jugador(nombretxt.getText(),Integer.parseInt(edadtxt.getText()), nacionalidadtxt.getText(), piehabiltxt.getText()){
+
+            @Override
+            public int rating() {
+                throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+            }
+
+        });
+        plantilla.add(j);
+        JOptionPane.showMessageDialog(this, "Se agrego exitosamente");
+        nombretxt.setText("");
+        nacionalidadtxt.setText("");
+        edadtxt.setText("");
+        piehabiltxt.setText("");
+
+    }//GEN-LAST:event_AgregarJugadorMouseClicked
+
+    private void nacionalidadtxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nacionalidadtxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nacionalidadtxtActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        // TODO add your handling code here:
+
+        listarTabla();
+
+    }//GEN-LAST:event_jButton1MouseClicked
     private void listarTabla() {
         try {
 
@@ -812,6 +804,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
     }
+static ArrayList plantilla = new ArrayList();
 static ArrayList<Equipo> e = new ArrayList();
 static ArrayList<Estadio> estadio = new ArrayList();
 static ArrayList<Jugador> j = new ArrayList();

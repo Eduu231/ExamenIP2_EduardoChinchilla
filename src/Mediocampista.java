@@ -14,6 +14,7 @@ public class Mediocampista extends Jugador{
         super(nombre, edad, nacionalidad, pieHabil, rating, equipo);
     }
     
+    @Override
     public int getVision() {
         return vision;
     }
@@ -27,6 +28,7 @@ public class Mediocampista extends Jugador{
        
     }
 
+    @Override
     public int getPassing() {
         return passing;
     }
@@ -40,6 +42,7 @@ public class Mediocampista extends Jugador{
         
     }
 
+    @Override
     public int getRegate() {
         return regate;
     }

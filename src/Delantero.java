@@ -10,9 +10,11 @@ public class Delantero extends Jugador{
         this.regate = regate;
     }
 
+    @Override
     public int getRitmo() {
         return ritmo;
     }
+    
     @Override
     public void setRitmo(int ritmo) {
         int r = 1 + rand.nextInt(12);
@@ -23,6 +25,7 @@ public class Delantero extends Jugador{
         
     }
 
+    @Override
     public int getDisparo() {
         return disparo;
     }
@@ -36,6 +39,7 @@ public class Delantero extends Jugador{
         
     }
 
+    @Override
     public int getRegate() {
         return regate;
     }
