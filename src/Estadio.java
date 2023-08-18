@@ -1,15 +1,18 @@
 
+import java.util.ArrayList;
+
+
 public class Estadio {
  
     private String nombre;
     private String ciudad;
     private int cantidad;
-    private Equipo e;
+    private ArrayList<Equipo> e;
 
     public Estadio() {
     }
 
-    public Estadio(String nombre, String ciudad, int cantidad, Equipo e) {
+    public Estadio(String nombre, String ciudad, int cantidad, ArrayList e) {
         this.nombre = nombre;
         this.ciudad = ciudad;
         this.cantidad = cantidad;
@@ -40,11 +43,11 @@ public class Estadio {
         this.cantidad = cantidad;
     }
 
-    public Equipo getE() {
+    public ArrayList getE() {
         return e;
     }
 
-    public void setE(Equipo e) {
+    public void setE(ArrayList e) {
         this.e = e;
     }
 
