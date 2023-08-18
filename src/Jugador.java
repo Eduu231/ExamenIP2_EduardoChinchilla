@@ -1,6 +1,9 @@
 
-public class Jugador {
-    
+import java.util.Random;
+
+
+public abstract class Jugador {
+    Random rand = new Random();
     private String nombre;
     private int edad;
     private String nacionalidad;
@@ -20,6 +23,13 @@ public class Jugador {
     private int disparo;
 
     public Jugador() {
+    }
+
+    public Jugador(String nombre, int edad, String nacionalidad, String pieHabil) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.nacionalidad = nacionalidad;
+        this.pieHabil = pieHabil;
     }
 
     
@@ -163,7 +173,7 @@ public class Jugador {
     public void setDisparo(int disparo) {
         this.disparo = disparo;
     }
-
+    public abstract int rating();
     @Override
     public String toString() {
         return "Jugador{" + "nombre=" + nombre + ", edad=" + edad + ", nacionalidad=" + nacionalidad + ", pieHabil=" + pieHabil + ", rating=" + rating + ", equipo=" + equipo + ", agarre=" + agarre + ", lanzamiento=" + lanzamiento + ", fisico=" + fisico + ", ritmo=" + ritmo + ", entrada=" + entrada + ", vision=" + vision + ", passing=" + passing + ", regate=" + regate + ", disparo=" + disparo + '}';

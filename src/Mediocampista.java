@@ -42,6 +42,11 @@ public class Mediocampista extends Jugador{
     public String toString() {
         return "Mediocampista{" + "vision=" + vision + ", passing=" + passing + ", regate=" + regate + '}';
     }
+
+    @Override
+    public int rating() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     
 }

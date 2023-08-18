@@ -38,6 +38,11 @@ public class Delantero extends Jugador{
     public String toString() {
         return "Delantero{" + "ritmo=" + ritmo + ", disparo=" + disparo + ", regate=" + regate + '}';
     }
+
+    @Override
+    public int rating() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     
 }

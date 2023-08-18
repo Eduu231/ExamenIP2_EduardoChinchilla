@@ -1,5 +1,9 @@
 
+import java.util.Random;
+
+
 public class Portero extends Jugador{
+    Random rand = new Random();
     private int agarre;
     private int lanzamiento;
     private int passing;
@@ -14,33 +18,63 @@ public class Portero extends Jugador{
         super(agarre, lanzamiento, fisico, ritmo, entrada, vision, passing, regate, disparo);
     }
 
+    @Override
     public int getAgarre() {
         return agarre;
     }
 
+    @Override
     public void setAgarre(int agarre) {
-        this.agarre = agarre;
+         int r = 1 + rand.nextInt(12);
+        int num = r * 12;
+        if (num >= 70 && num <= 100){
+            super.setAgarre(num);
+        }
+        
     }
 
+    @Override
     public int getLanzamiento() {
         return lanzamiento;
     }
 
+    @Override
     public void setLanzamiento(int lanzamiento) {
-        this.lanzamiento = lanzamiento;
+         int r = 1 + rand.nextInt(12);
+        int num = r * 12;
+        if (num >= 70 && num <= 100){
+            super.setLanzamiento(num);
+        }
+        
+        
     }
 
+    @Override
     public int getPassing() {
         return passing;
     }
 
+    @Override
     public void setPassing(int passing) {
-        this.passing = passing;
+        int r = 1 + rand.nextInt(12);
+        int num = r * 12;
+        if (num >= 70 && num <= 100){
+            super.setPassing(num);
+        }
     }
 
     @Override
     public String toString() {
         return "Portero{" + "agarre=" + agarre + ", lanzamiento=" + lanzamiento + ", passing=" + passing + '}';
+    }
+
+    
+    @Override
+    public int rating() {
+        int total = this.agarre + this.lanzamiento + this.passing;
+        int promedio = total/3;
+        
+        return promedio;
     }
     
     

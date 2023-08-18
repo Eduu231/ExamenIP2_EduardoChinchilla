@@ -43,6 +43,11 @@ public class Defensa extends Jugador{
     public String toString() {
         return "Defensa{" + "fisico=" + fisico + ", ritmo=" + ritmo + ", entrada=" + entrada + '}';
     }
+
+    @Override
+    public int rating() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     
 }
