@@ -725,7 +725,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane1)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -834,14 +837,14 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private void EliminarListMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EliminarListMouseClicked
         // TODO add your handling code here:
         
-        listarTabla();
+       listarElim();
     }//GEN-LAST:event_EliminarListMouseClicked
 
     private void EliminarListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EliminarListActionPerformed
         // TODO add your handling code here:
         
         
-        listarTabla();
+        listarElim();
         
         
         
@@ -849,14 +852,64 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
     private void ModListMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ModListMouseClicked
         // TODO add your handling code here:
-        listarTabla();
+        listarMod();
     }//GEN-LAST:event_ModListMouseClicked
 
     private void ModListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ModListActionPerformed
         // TODO add your handling code here:
         
-        listarTabla();
+        listarMod();
     }//GEN-LAST:event_ModListActionPerformed
+    
+    private void listarElim(){
+         try {
+
+            //limpiar tabla
+            TablaElim.setModel(new javax.swing.table.DefaultTableModel(
+                    new Object[][]{},
+                    new String[]{
+                        "Nombre", "Edad", "Nacionalidad", "Pie Habil"
+                    }
+            ));
+
+            // TODO add your handling code here:
+            for (Jugador t : j) {
+                Object[] row = {t.getNombre(), t.getEdad(), t.getNacionalidad(), t.getPieHabil()};
+                DefaultTableModel modelo = (DefaultTableModel) TablaElim.getModel();
+                modelo.addRow(row);
+                TablaElim.setModel(modelo);            
+            }
+            
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+    private void listarMod(){
+         try {
+
+            //limpiar tabla
+            TablaMod.setModel(new javax.swing.table.DefaultTableModel(
+                    new Object[][]{},
+                    new String[]{
+                        "Nombre", "Edad", "Nacionalidad", "Pie Habil"
+                    }
+            ));
+
+            // TODO add your handling code here:
+            for (Jugador t : j) {
+                Object[] row = {t.getNombre(), t.getEdad(), t.getNacionalidad(), t.getPieHabil()};
+                DefaultTableModel modelo = (DefaultTableModel) TablaMod.getModel();
+                modelo.addRow(row);
+                TablaMod.setModel(modelo);            
+            }
+            
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+    
     private void listarTabla() {
         try {
 
@@ -870,7 +923,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
             // TODO add your handling code here:
             for (Jugador t : j) {
-                Object[] row = {t.getNombre(), t.getNacionalidad(), t.getEdad(), t.getPieHabil()};
+                Object[] row = {t.getNombre(), t.getEdad(), t.getNacionalidad(), t.getPieHabil()};
                 DefaultTableModel modelo = (DefaultTableModel) tablaListar.getModel();
                 modelo.addRow(row);
                 tablaListar.setModel(modelo);            
